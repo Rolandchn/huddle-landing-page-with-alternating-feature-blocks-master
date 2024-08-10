@@ -1,0 +1,141 @@
+
+
+.main__content{
+    margin-top: 5rem;
+    margin-inline: 0.5rem;
+}
+
+
+.main__content--item{
+    box-shadow: var(--shadow-item);
+    border-radius: 20px;
+    
+    text-align: center;
+
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.main__content--item-img{
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+
+    margin-inline: auto;
+}
+
+.main__content--item-title{
+    font-size: var(--size-lg);
+
+    line-height: 1;
+    
+    margin-top: 3rem;
+}
+
+.main__content--item-description{
+    font-size: var(--size-xs);
+
+    max-width: 38ch;
+
+    margin-inline: auto;
+    margin-top: 1.5rem;
+}
+
+.main__content--item-margin-top0{
+    margin-top: 0;
+}
+
+
+@media (min-width: 475px){
+    .main__content--item-img{
+        width: 70%;
+    }
+
+    .main__content--item-title{
+        font-size: var(--size-xl);
+    }
+    
+    .main__content--item-description{
+        font-size: var(--size-sm);
+    }
+}
+
+@media (min-width: 640px){
+    .main__content--item-img{
+        width: 45%;
+    }
+
+    .main__content--item-title{
+        font-size: var(--size-2xl);
+    }
+    
+    .main__content--item-description{
+        font-size: var(--size-base);
+        max-width: 38ch;
+    }
+}
+
+@media (min-width: 786px){
+    .main__content--item{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        gap: 2rem;
+
+        text-align: start;
+        padding: 2rem;
+    }
+
+    .main__content--item-title{
+        margin-top: 0;
+    }
+
+    .main__content--item-description{
+        max-width: 70ch;
+    }
+
+    .main__content--item-img{
+        width: 50%;
+        margin-inline: 0;
+    }
+
+    .flex-order1{
+        order: 1;
+    }
+
+    .flex-order0{
+        order: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .main__content--item-title{
+        font-size: var(--size-2xl);
+    }
+
+    .main__content--item-description{
+        font-size: var(--size-base);
+    }
+
+    .main__content--item-img{
+        margin-inline: 0;
+    }
+}
+
+@media (min-width: 1280px){
+    .main__content--item-description{
+        font-size: var(--size-xl);
+        max-width: 48ch;
+    }
+
+    .main__content--item-img{
+        width: 30%;
+    }
+}
+
+@media (min-width: 1536px){
+    .main__content--item-img{
+        width: 25%;
+    }
+}

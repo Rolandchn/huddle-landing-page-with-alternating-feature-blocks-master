@@ -1,0 +1,197 @@
+
+
+.footer{
+    background-color: var(--clr-very-dark-cyan);
+
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+}
+
+.footer__logo{
+    height: var(--size-2xl);
+    width: auto;
+    object-fit: contain;
+
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(217deg) brightness(102%) contrast(101%);
+}
+
+.footer__container{
+    margin-top: 2rem;
+}
+
+.footer__contact--icon{
+    height: calc(1em + 0.5rem);
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer__contact--container > * + *{
+    margin-top: 1.5rem;
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer__contact--info{
+    color: var(--clr-white);
+    font-size: var(--size-base);
+    max-width: 45ch;
+}   
+
+
+.footer__link--container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-top: 4rem;
+}
+
+.footer__link{
+    color: var(--clr-white);
+    font-size: var(--size-base);
+    font-weight: 400;
+
+    text-decoration: none;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+.footer__social--container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__social{
+    font-size: var(--size-lg);
+    font-weight: 400;
+    color: var(--clr-white);
+
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+
+    padding: 0.5rem;
+
+    line-height: 0;
+
+    transition: border 0.1s, filter 0.1s;
+}
+
+.footer__social:hover{
+    border: 1px solid var(--clr-pink);
+    filter: invert(44%) sepia(78%) saturate(1354%) hue-rotate(295deg) brightness(103%) contrast(101%);
+}
+
+
+.footer__copyright{
+    font-size: var(--size-xs);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer__attribution{
+    font-size: var(--size-xs);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer__attribution--link{
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.footer a:focus-visible,
+.footer button:focus-visible{
+    outline: solid var(--clr-white);
+}
+
+
+@media (min-width: 475px){
+    .footer__contact--info{
+        font-size: var(--size-lg);
+    }
+    
+    .footer__link{
+        font-size: var(--size-lg);
+    }
+
+    .footer__social{
+        font-size: var(--size-xl);
+    }
+}
+
+@media (min-width: 640px){
+}
+
+@media (min-width: 786px){
+    /* .footer__logo{
+        height: var(--size-3xl);
+    }
+    
+    .footer__contact--info{
+        font-size: var(--size-xl);
+        max-width: 50ch;
+    }
+    
+    .footer__link{
+        font-size: var(--size-xl);
+    }
+    
+    .footer__social{
+        font-size: var(--size-2xl);
+    }
+    
+    .footer__copyright{
+        font-size: var(--size-sm);
+    } */
+}
+
+@media (min-width: 1024px){
+    .footer{
+        padding-inline: 4rem;
+    }
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .footer__contact--container,
+    .footer__link--container,
+    .footer__social--container{
+        margin-top: 0;
+    }
+
+    .footer__copyright{
+        text-align: right;
+    }
+}
+
+@media (min-width: 1280px){
+    .footer__link--container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20ch, 1fr));
+        row-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1536px){
+
+}
+
+
+/* 
+.footer__contact--icon need to be vertical align middle
+.footer__link--container need to use grid
+*/
